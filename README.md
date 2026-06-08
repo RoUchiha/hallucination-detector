@@ -4,6 +4,23 @@
 
 ---
 
+## Academic Background
+
+This project was built as a capstone application of concepts from the **[UT Austin AI & Machine Learning](https://onlineexeced.mccombs.utexas.edu/online-ai-machine-learning-course)** program (McCombs School of Business, 23-week executive program).
+
+Specific modules applied:
+
+| Module | Concept Applied |
+|--------|----------------|
+| **Course 03 — Generative AI for NLP** | Large language model APIs, responsible AI implementation, understanding LLM failure modes (hallucination) |
+| **Course 03 — Generative AI for NLP** | Retrieval-Augmented Generation (RAG) — the chunked source-document retrieval in the NLI scorer mirrors RAG's chunk-and-retrieve pattern |
+| **Pre-Work — Generative AI Landscape** | Understanding where hallucination fits in the broader landscape of LLM reliability and safety |
+| **Tools: HuggingFace** | Loading and running the `cross-encoder/nli-deberta-v3-small` transformer model via the `transformers` pipeline API |
+
+The course's emphasis on **responsible AI implementation** directly motivated the dual-scoring design: rather than trusting a single model's output, this pipeline cross-validates every claim using two independent methods — the same principle the course teaches for building robust, trustworthy AI systems.
+
+---
+
 ## What Is This?
 
 Large Language Models (LLMs) like GPT-4 and Claude sometimes generate text that sounds confident and fluent but contains facts that are simply wrong or not supported by any source. These errors are called **hallucinations**.
